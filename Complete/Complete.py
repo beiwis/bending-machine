@@ -59,13 +59,11 @@ try:
     chan = AnalogIn(ads, ADS.P0)
 
     while True:
-        print("Select an automatic (a) or manual (m) ... ")
-        sel = input()
+        sel = input("Select an automatic (a) or manual (m) ... ")
 
         if sel == "m":
             while True:
-                print("Select the distance (0-25mm):")
-                dis = input()
+                dis = input("Select the distance (0-25mm):")
                 try:
                     dis = float(dis)
                     if 0 <= dis <= 25:
@@ -74,7 +72,7 @@ try:
                         print(f"distance={dis}mm\tSTG={read_STG()}\tForce={read_force(unit='N')}N")
                     else:
                         print("Distance should be between 0 and 25mm.")
-                except ValueError:
+                except ValueError: #FIXME: exceptions DO NOT WORK LIKE THIS
                     print("Invalid input. Please enter a valid distance value.")
                 except KeyboardInterrupt:
                     cleanAndExit()
