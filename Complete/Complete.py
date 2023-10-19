@@ -15,7 +15,7 @@ def cleanAndExit():
     time.sleep(0.2)
     GPIO.cleanup()
     
-    # Close the serial connection
+    # Close the serial connection <3
     serial_connection.close()
     file.close()
         
