@@ -1,3 +1,0 @@
-- [['Kick off' meeting]]
-- [[work sesh]]
-- Monday 10-17h

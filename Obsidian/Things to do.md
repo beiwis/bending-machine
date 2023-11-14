@@ -1,9 +1,0 @@
-- FOR NEXT WEEK
-	- Automatic and manual things working
-	- Clean up
-	- requirements.txt
-- Dashboard 
-	- automatic vs manual function
-	- plotting
-	- previous data
-- mobile app
