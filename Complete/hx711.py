@@ -38,7 +38,6 @@ class HX711:
 
         self.set_gain(gain)
 
-        # Think about whether this is necessary.
         time.sleep(1)
 
         
