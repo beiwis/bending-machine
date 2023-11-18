@@ -11,6 +11,7 @@ def gen():
     cap = cv2.VideoCapture(0)
     while True:
         ret, frame = cap.read()
+        frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + cv2.imencode('.jpg', frame)[1].tobytes() + b'\r\n')
 
