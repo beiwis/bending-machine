@@ -9,7 +9,7 @@ def show_video_feed():
         ret, frame = cap.read()
         
         # Lower the image resolution by resizing the frame
-        frame = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
+        frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
 
         # Display the frame in a window named "Video Feed"
         cv2.imshow("Video Feed", frame)
