@@ -1,5 +1,5 @@
+from flask import Flask, render_template, Response, make_response
 import cv2
-from flask import Flask, render_template, Response
 
 app = Flask(__name__)
 
@@ -19,6 +19,11 @@ def gen():
 def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.after_request
+def after_request(response):
+    response.headers["X-Frame-Options"] = "SAMEORIGIN"
+    return response
 
 if __name__ == '__main__':
     context = ('cert.pem', 'key.pem')  # certificate and key files
