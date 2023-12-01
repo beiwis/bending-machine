@@ -1,7 +1,6 @@
 import time
 import logging as log
 import pandas as pd
-
 import board
 import busio
 import RPi.GPIO as GPIO

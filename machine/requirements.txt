@@ -1,0 +1,12 @@
+numpy==1.19.5
+matplotlib==3.4.3
+import-time
+logging
+pandas
+board
+busio
+RPi.GPIO
+hx711
+adafruit-ads1x15
+pyax12
+adafruit-ads1x15
