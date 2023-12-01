@@ -1,6 +1,6 @@
 numpy==1.19.5
 matplotlib==3.4.3
-import-time
+time
 logging
 pandas
 board
