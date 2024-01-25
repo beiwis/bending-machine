@@ -8,7 +8,7 @@ def index():
     return render_template('index.html')
 
 def gen():
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(2)
     while True:
         ret, frame = cap.read()
         frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
